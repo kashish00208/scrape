@@ -1,4 +1,3 @@
-
 export default function Home() {
   return (
     <div className="min-h-screen font-mono bg-[#1c1d1c] px-12 border-x-2">
