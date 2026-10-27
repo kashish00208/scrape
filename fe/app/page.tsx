@@ -1,13 +1,19 @@
+"use client"
+import { useRouter } from "next/navigation";
 export default function Home() {
+  const router = useRouter();
+  const handleGetStarted = () =>{
+    router.push("/plan")
+  }
   return (
     <div className="min-h-screen font-mono bg-[#1c1d1c] px-12 border-x-2">
       <div className="min-h-screen w-full bg-[#030303] border-l border-r border-white/30">
         <header className="w-full flex justify-between items-center p-5 border-b border-white/30">
           <div className="font-mono text-white text-lg">
-            kinisi
+            UNTANGLE
           </div>
 
-          <button className="bg-white rounded-3xl px-4 py-2 text-black text-sm hover:bg-neutral-200 transition-colors">
+          <button onClick={handleGetStarted} className="bg-white rounded-3xl px-4 py-2 text-black text-sm hover:bg-neutral-200 transition-colors">
             Get started
           </button>
         </header>
